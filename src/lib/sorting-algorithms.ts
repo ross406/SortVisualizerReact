@@ -2,7 +2,7 @@ import type { ArrayElement, SortingStep, SortingAlgorithm } from "../shared/sche
 
 export class SortingAlgorithms {
   static generateSteps(algorithm: SortingAlgorithm, array: ArrayElement[]): SortingStep[] {
-    const steps: SortingStep[] = [];
+    // const steps: SortingStep[] = [];
     const arr = [...array];
     
     switch (algorithm) {

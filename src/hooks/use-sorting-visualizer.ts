@@ -51,8 +51,8 @@ export function useSortingVisualizer(): UseSortingVisualizerReturn {
   });
   const [startTime, setStartTime] = useState<number | null>(null);
   
-  const intervalRef = useRef(null);
-  const timeIntervalRef = useRef(null);
+  const intervalRef = useRef<number | null>(null);
+  const timeIntervalRef = useRef<number | null>(null);
 
   // Generate initial array
   const generateArray = useCallback((size: number) => {
