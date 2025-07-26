@@ -39,8 +39,8 @@ export function VisualizationArea({ visualizer, algorithmInfo }: VisualizationAr
       </div>
 
       {/* Visualization Canvas */}
-      <div className="relative bg-gray-50 rounded-lg p-4 min-h-96">
-        <div className="flex items-end justify-center space-x-px h-80 overflow-x-auto" style={{ minWidth: `${visualizer.array.length * (barWidth + 1)}px` }}>
+      <div className="relative bg-gray-50 rounded-lg p-4 min-h-96 overflow-x-scroll md:overflow-x-auto  w-full">
+        <div className="flex items-end justify-center space-x-px h-80" style={{ minWidth: `${visualizer.array.length * (barWidth + 1)}px` }}>
           {visualizer.array.map((element, index) => {
             const height = (element.value / maxValue) * maxHeight;
             const getBarColor = () => {
@@ -90,7 +90,7 @@ export function VisualizationArea({ visualizer, algorithmInfo }: VisualizationAr
           <span className="text-gray-900 font-medium">{Math.round(visualizer.progress)}%</span>
         </div>
         <div className="mt-2">
-          <Progress value={visualizer.progress} className="h-2" />
+          <Progress value={visualizer.progress} className="h-4" />
         </div>
       </div>
     </div>

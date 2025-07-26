@@ -31,8 +31,8 @@ interface UseSortingVisualizerReturn {
 
 const SPEED_DELAYS = {
   slow: 1000,
-  normal: 300,
-  fast: 50
+  normal: 100,
+  fast: 10
 };
 
 export function useSortingVisualizer(): UseSortingVisualizerReturn {
