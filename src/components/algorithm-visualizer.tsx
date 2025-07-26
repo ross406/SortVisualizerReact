@@ -5,7 +5,7 @@ import { CodePanel } from "./code-panel";
 // import { useSortingVisualizer } from "@/hooks/use-sorting-visualizer";
 // import { algorithmData } from "@/lib/algorithm-data";
 // import { Button } from "@/components/ui/button";
-import { SkipForward, SkipBack, Edit, Scale } from "lucide-react";
+import { SkipForward, SkipBack, Edit } from "lucide-react";
 import { useSortingVisualizer } from "../hooks/use-sorting-visualizer";
 import { algorithmData } from "../lib/algorithm-data";
 import { Button } from "./ui/button";

@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from "react";
-import type { ArrayElement, SortingStep, SortingAlgorithm, AnimationSpeed, AlgorithmStats, ElementState } from "../shared/schema";
+import type { ArrayElement, SortingStep, SortingAlgorithm, AnimationSpeed, AlgorithmStats } from "../shared/schema";
 import { SortingAlgorithms } from "../lib/sorting-algorithms";
 // import { SortingAlgorithms } from "@/lib/sorting-algorithms";
 
@@ -51,8 +51,8 @@ export function useSortingVisualizer(): UseSortingVisualizerReturn {
   });
   const [startTime, setStartTime] = useState<number | null>(null);
   
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const timeIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const intervalRef = useRef(null);
+  const timeIntervalRef = useRef(null);
 
   // Generate initial array
   const generateArray = useCallback((size: number) => {

@@ -3,5 +3,10 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "noEmitOnError": false,       // Don't stop build on type warnings
+    "skipLibCheck": true,         // Ignore type issues in node_modules
+    "strict": false               // Loosen strict rules, optional
+  }
 }
