@@ -1,69 +1,45 @@
-# React + TypeScript + Vite
+# 🧪 Sorting Algorithm Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and interactive web application that visualizes popular sorting algorithms in action. Adjust speed, change the array size, view real-time statistics, and step through the logic line-by-line — all in a beautifully animated UI.
 
-Currently, two official plugins are available:
+🌐 **Live Demo**: [sortvisualizer.netlify.app](https://sortvisualizer.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot](./1.webp)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 📊 **Visualize Sorting Algorithms**: Bubble Sort, Selection Sort, Insertion Sort, and more.
+- 🐢🐇 **Control Speed**: Switch between Slow, Normal, and Fast modes.
+- 🔀 **Randomize or Customize Arrays**: Shuffle existing data or input your own.
+- 🎛️ **Adjust Sample Size**: Dynamically change the size of the array being sorted.
+- ⏯️ **Interactive Controls**: Play, pause, step forward/backward, or reset the animation.
+- 📈 **Live Stats**: Track comparisons, swaps, accesses, and time.
+- 🧠 **Pseudocode Execution**: Watch the algorithm logic unfold line-by-line.
+- 📦 Built using **React 19**, **Vite**, **Tailwind CSS**, and **Radix UI**.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Frontend**: React + Vite
+- **Styling**: Tailwind CSS + Lucide Icons
+- **UI Components**: Radix UI (Progress, Slider, Select)
+- **Type Safety**: TypeScript
+- **Linting**: ESLint + TypeScript ESLint Plugin
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/sorting-visualizer.git
+cd sorting-visualizer
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
